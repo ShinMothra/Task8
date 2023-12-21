@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html lang="eng">
+<head>
+	<title>Контактная форма</title>
+	<link href="style.css" rel="stylesheet">
+	<meta content="width=device-width initial-scale=1" name="viewport">
+	<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+	      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" rel="stylesheet">
+	<script defer src="script.js"></script>
+</head>
+<body class="container-fluid bg-light">
+<main>
+	<main>
+		<button class="btn btn-outline-info " id="buttonFormShow" type="button">Вызвать форму</button>
+	</main>
+</main>
+<div class="text-center" id="popup">
+	<form action="https://formcarry.com/s/jBM7nj5uO"
+	      class="mx-auto text-dark mt-sm-2 p-2 border rounded mx-auto border-light bg-light" method="POST">
+		<label class="form-check-label" for="name">ФИО:</label>
+		<input class="form-control save-to-storage" id="name" name="name" required type="text" placeholder="ФИО"> <br>
+
+		<label class="form-check-label" for="email">Адрес электронной почты:</label>
+		<input class="form-control save-to-storage" id="email" name="email" required type="email" placeholder="Email"> <br>
+
+        <label class="form-check-label" for="phone">Телефон:</label>
+		<input class="form-control save-to-storage" id="phone" name="phone" required type="phone" placeholder="8-800-555-35-35"> <br>
+
+        <label class="form-check-label" for="organization">Организация:</label>
+		<input class="form-control save-to-storage" id="organization" name="organization" required type="text" placeholder="Организация"> <br>
+		
+		<label class="form-check-label" for="message">Сообщение:</label> <br>
+		<textarea class="form-control save-to-storage" id="message" name="message" required rows="8"></textarea> <br>
+		
+		<input class="form-check-input" id="checkbox" name="agreement" required type="checkbox" value="agreed">
+		<label class="form-check-label" for="checkbox">Согласие на обработку персональных данных</label> <br>
+		
+		<button class="btn btn-outline-primary" id="formSubmit" type="button">Отправить</button>
+		<div id="result"></div>
+	</form>
+</div>
+<script crossorigin="anonymous"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
